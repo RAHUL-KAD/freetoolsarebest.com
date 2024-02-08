@@ -6,7 +6,7 @@ import tools from "../public/alltools.json";
 
 export default function Freetools() {
   return (
-    <section id="podcasts" className="max-w-full pb-10 md:pt-5">
+    <section id="freetools" className="max-w-full pb-10 md:pt-5">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 max-w-7xl">
