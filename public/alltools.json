@@ -23,5 +23,20 @@
         "title": "WHOIS domain lookup",
         "desc": "Lookup registration data for any domain name.",
         "url" : "/domain-lookup"
+    },
+    {
+        "title": "Random color generation",
+        "desc": "Generate random color.",
+        "url" : "/random-color"
+    },
+    {
+        "title": "Browser and OS detection",
+        "desc": "Detect browser and operating system.",
+        "url" : "/random-color"
+    },
+    {
+        "title": "Email Validation and verification",
+        "desc": "Validate that email address is correct.",
+        "url" : "/email-validation"
     }
 ]
