@@ -1,4 +1,10 @@
-[
+[   
+    {
+        "title": "Email Validation and verification",
+        "desc": "Validate that email address is correct.",
+        "url" : "/email-validation",
+        "button": "Validate Emails"
+    },
     {
         "title": "QR code generator",
         "desc": "Generate free QR codes for links, or text messages.",
@@ -6,16 +12,16 @@
         "button": "Generate QR code"
     },
     {
-        "title": "Text to speech",
-        "desc": "Free text to speech generator for more than 20 languages.",
-        "url" : "/text-to-speech",
-        "button": "Coming soon"
-    },
-    {
         "title": "Royalty free background music",
         "desc": "Download and use royalty free background music.",
         "url": "/background-music",
         "button": "Explore Free music"
+    },
+    {
+        "title": "Text to speech",
+        "desc": "Free text to speech generator for more than 20 languages.",
+        "url" : "/text-to-speech",
+        "button": "Coming soon"
     },
     {
         "title": "Barcode Generator",
@@ -40,11 +46,6 @@
         "desc": "Detect browser and operating system.",
         "url" : "/random-color",
         "button": "Coming soon"
-    },
-    {
-        "title": "Email Validation and verification",
-        "desc": "Validate that email address is correct.",
-        "url" : "/email-validation",
-        "button": "Validate Emails"
     }
+    
 ]
