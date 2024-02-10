@@ -2,25 +2,38 @@ import Head from "next/head";
 import Header from "../../components/Header";
 import React, { useState } from 'react';
 
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 // https://mailbite.io/
 // https://listclean.xyz/
 
+interface EmailResponse {
+    isEmailValid: boolean;
+    mxRecords: any[]; // Assuming mxRecords is an array of objects
+    // Add more properties if needed
+}
+
 export default function EmailValidation() {
     const [email, setEmail] = useState('');
-    const [response, setResponse] = useState('');
+    const [showResponse, setShowResponse] = useState(false)
+    const [loadingResponse, setLoadingResponse] = useState(false)
+    const [response, setResponse] = useState<EmailResponse>({ isEmailValid: false, mxRecords: [] });
 
     const handleSubmit = async (event: { preventDefault: () => void; }) => {
         event.preventDefault();
 
         try {
+            setLoadingResponse(true)
             const apiUrl = `${process.env.NEXT_PUBLIC_EMAIL_VALIDATION_URL}/validate-email?email=${encodeURIComponent(email)}`;
             const res = await fetch(apiUrl);
             const data = await res.json();
-            setResponse(JSON.stringify(data, null, 2));
+            setResponse(data);
+            setLoadingResponse(false)
+            setShowResponse(true)
         } catch (error) {
             console.error('Error fetching data:', error);
-            setResponse('Error fetching data');
+            setResponse({ isEmailValid: false, mxRecords: [] });
         }
     };
 
@@ -92,19 +105,38 @@ export default function EmailValidation() {
                                 required
                             />
                         </div>
-                        <button
-                            type="submit"
-                            className="inline-flex ml-10 items-center py-2.5 px-3 ms-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                        >
-                            Verify
-                        </button>
+                            <button
+                                type="submit"
+                                className="inline-flex lg:ml-10 md:ml-5 sm:ml-5 ml-5 items-center py-2.5 px-3 ms-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            >
+                                Verify
+                            </button>
                     </form>
 
-                    {response &&
-                        <div className="mt-4 w-[28rem] flex">
-                            <pre>{response}</pre>
-                        </div>
+                    {loadingResponse &&
+                        <Skeleton count={3} />
                     }
+
+                    {showResponse && !loadingResponse && (
+                        <div className="mt-10">
+
+                            <h1 className="font-display mx-auto max-w-3xl text-center text-3xl font-bold tracking-normal text-slate-900 sm:text-3xl">
+                                <span className="relative text-[#333] whitespace-wrap">
+                                    <span className="relative mr-2">
+                                    Status: {response.isEmailValid ? 'true' : 'false'}
+                                    </span>
+                                </span>
+                            </h1>
+                            {/* <pre>
+                                mxRecords:
+                                {response.mxRecords.map((record, index) => (
+                                    <div key={index}>
+                                        {JSON.stringify(record)}
+                                    </div>
+                                ))}
+                            </pre> */}
+                        </div>
+                    )}
                 </div>
 
             </main>
