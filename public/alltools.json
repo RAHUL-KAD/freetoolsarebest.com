@@ -6,6 +6,12 @@
         "button": "Validate Emails"
     },
     {
+        "title": "URL shortening",
+        "desc": "Free URL shortening.",
+        "url" : "/short-url",
+        "button": "URL shortening"
+    },
+    {
         "title": "QR code generator",
         "desc": "Generate free QR codes for links, or text messages.",
         "url": "/qr-code",
@@ -15,7 +21,7 @@
         "title": "Royalty free background music",
         "desc": "Download and use royalty free background music.",
         "url": "/background-music",
-        "button": "Explore Free music"
+        "button": "Coming soon"
     },
     {
         "title": "Text to speech",
@@ -27,7 +33,7 @@
         "title": "Barcode Generator",
         "desc": "Generate unique barcodes to track and organize your product.",
         "url" : "/barcode-generator",
-        "button": "Coming soon"
+        "button": "Generate Barcode"
     },
     {
         "title": "WHOIS domain lookup",

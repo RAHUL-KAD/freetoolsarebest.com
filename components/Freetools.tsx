@@ -14,6 +14,8 @@ export default function Freetools() {
             <>
               <Suspense key={index} fallback={<div>Loading...</div>}>
 
+                { episod.button !== 'Coming soon' && (
+
                 <div className="undefined relative p-4 flex flex-col overflow-hidden rounded-lg border border-gray-200 shadow-sm dark:border-gray-800">
                   <div className="flex grow flex-col p-3 sm:py-0 sm:px-6">
                     <div className="text-color-secondary flex items-center gap-x-2">
@@ -40,6 +42,8 @@ export default function Freetools() {
                       {episod.button}
                     </a>
                 </div>
+
+              )}
               </Suspense>
             </>
 
