@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.39.4",
     "autoprefixer": "^10.4.17",
     "axios": "^1.5.1",
     "daisyui": "^4.7.0",
