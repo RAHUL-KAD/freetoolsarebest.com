@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Header from "../../components/Header";
 import { useState } from "react";
-
+import LoadingDots from "../../components/LoadingDots";
 // https://chat.openai.com/share/3441bbb4-2a81-494d-8c95-8fb02d64eeb0
 
 interface ShortUrlResponse {
-    isShortUrl: string;
+    shortUrl: string;
 }
 
 export default function QRCode() {
@@ -13,15 +13,30 @@ export default function QRCode() {
     const [url, setUrl] = useState<string>("");
     const [showResponse, setShowResponse] = useState(false)
     const [loadingResponse, setLoadingResponse] = useState(false)
-    const [response, setResponse] = useState<ShortUrlResponse>({ isShortUrl: ''});
-    
+    const [response, setResponse] = useState<ShortUrlResponse>({ shortUrl: '' });
+
     const handleSubmit = async (event: { preventDefault: () => void; }) => {
         event.preventDefault();
-
-        if(url){
-            console.log("Url to shorten - ", url)
+        if (url) {
+            try {
+                setLoadingResponse(true)
+                const apiUrl = `${process.env.NEXT_PUBLIC_EMAIL_VALIDATION_URL}/short-url?url=${encodeURIComponent(url)}`;
+                const res = await fetch(apiUrl);
+                const data = await res.json();
+                // console.log("data - ", data)
+                setResponse(data);
+                setLoadingResponse(false)
+                setShowResponse(true)
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                setResponse({ shortUrl: '' });
+            }
         }
     };
+
+    // function copy(text: string) {
+    //     navigator.clipboard.writeText(text)
+    // }
 
     return (
 
@@ -50,7 +65,7 @@ export default function QRCode() {
                 <rect
                     width="100%"
                     height="100%"
-                    stroke-width="0"
+                    strokeWidth="0"
                     fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)"
                 />
             </svg>
@@ -81,7 +96,8 @@ export default function QRCode() {
                         <form className="flex items-center max-w-[600px]" onSubmit={handleSubmit}>
                             <div className="relative">
                                 <input
-                                    type="text"
+                                    type="url"
+                                    id="short-url"
                                     className="bg-gray-50 lg:w-[28rem] md:w-[20rem] border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     placeholder="Enter your url to shorten..."
                                     value={url}
@@ -93,9 +109,38 @@ export default function QRCode() {
                                 type="submit"
                                 className="inline-flex lg:ml-10 md:ml-5 sm:ml-5 ml-5 items-center py-2.5 px-3 ms-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                             >
+                                {loadingResponse && (
+                                    <div className="mr-2 flex">
+                                        <LoadingDots color="#fff" />
+                                    </div>
+                                )}
                                 Shorten
                             </button>
                         </form>
+
+
+
+                        {showResponse && !loadingResponse && (
+                            <div className="mt-10">
+
+                                <h1 className="whitespace-wrap mx-auto text-center text-sm font-bold tracking-normal text-slate-900 sm:text-3xl">
+                                    <span className="relative text-[#333] whitespace-wrap">
+                                        <span className="relative mr-2 whitespace-wrap">
+                                            Short URL: <br />
+                                            <a href={`${response.shortUrl}`}
+                                                target="_blank"
+                                                className="text-blue-700 underline">
+                                                {response.shortUrl}
+                                            </a>
+                                        </span>
+                                    </span>
+                                </h1>
+
+                                {/* <span onClick={() => copy(response.shortUrl)}>
+                                    Copy
+                                </span> */}
+                            </div>
+                        )}
                     </div>
                 </div>
 
