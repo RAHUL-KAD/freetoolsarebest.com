@@ -8,7 +8,7 @@ interface ShortUrlResponse {
     shortUrl: string;
 }
 
-export default function QRCode() {
+export default function ShortURL() {
 
     const [url, setUrl] = useState<string>("");
     const [showResponse, setShowResponse] = useState(false)
