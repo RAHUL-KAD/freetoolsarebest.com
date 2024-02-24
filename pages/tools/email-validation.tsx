@@ -2,10 +2,12 @@ import Head from "next/head";
 import Header from "../../components/Header";
 import React, { useState } from 'react';
 
-import Skeleton from 'react-loading-skeleton'
-import 'react-loading-skeleton/dist/skeleton.css'
+// import Skeleton from 'react-loading-skeleton'
+// import 'react-loading-skeleton/dist/skeleton.css'
 import { supabase } from '../../libs/supabase'
 import axios from "axios";
+import LoadingDots from "../../components/LoadingDots";
+
 
 // https://mailbite.io/
 // https://listclean.xyz/
@@ -196,17 +198,22 @@ export default function EmailValidation() {
                                 required
                             />
                         </div>
-                            <button
-                                type="submit"
-                                className="inline-flex lg:ml-10 md:ml-5 sm:ml-5 ml-5 items-center py-2.5 px-3 ms-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                            >
-                                Verify
-                            </button>
+                        <button
+                            type="submit"
+                            className="inline-flex lg:ml-10 md:ml-5 sm:ml-5 ml-5 items-center py-2.5 px-3 ms-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        >
+                            {loadingResponse && (
+                                <div className="mr-2 flex">
+                                    <LoadingDots color="#fff" />
+                                </div>
+                            )}
+                            Verify
+                        </button>
                     </form>
-                    
-                    {loadingResponse &&
+
+                    {/* {loadingResponse &&
                         <Skeleton count={3} />
-                    }
+                    } */}
 
                     {showResponse && !loadingResponse && (
                         <div className="mt-10">
@@ -214,7 +221,7 @@ export default function EmailValidation() {
                             <h1 className="font-display mx-auto max-w-3xl text-center text-3xl font-bold tracking-normal text-slate-900 sm:text-3xl">
                                 <span className="relative text-[#333] whitespace-wrap">
                                     <span className="relative mr-2">
-                                    Status: {response.isEmailValid ? 'true' : 'false'}
+                                        Status: {response.isEmailValid ? 'true' : 'false'}
                                     </span>
                                 </span>
                             </h1>
@@ -229,7 +236,7 @@ export default function EmailValidation() {
                         </div>
                     )}
 
-                    
+
                     {/* {uploadUi &&
                         <div className="lg:mr-10 mb-20">
                             <p className="mt-10 text-center text-[#333] whitespace-wrap">or you can upload <span className="font-bold"> CSV</span> containing email address  </p>
