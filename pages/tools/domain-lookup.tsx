@@ -55,7 +55,7 @@ export default function DomainLookUp() {
             try {
                 setLoadingResponse(true);
 
-                const apiUrl = `http://localhost:8900/whois?domain=${encodeURIComponent(url)}`;
+                const apiUrl = `${process.env.NEXT_PUBLIC_EMAIL_VALIDATION_URL}/whois?domain=${encodeURIComponent(url)}`;
                 const requestOptions = {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
