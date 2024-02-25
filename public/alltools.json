@@ -42,6 +42,12 @@
         "button": "Domain lookup"
     },
     {
+        "title": "URL to Screenshot",
+        "desc": "Capture a screenshots from url.",
+        "url" : "/url-to-screenshot",
+        "button": "Take Screenshots"
+    },
+    {
         "title": "Random color generation",
         "desc": "Generate random color.",
         "url" : "/random-color",
