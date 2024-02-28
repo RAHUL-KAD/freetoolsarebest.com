@@ -15,6 +15,7 @@
     [ ] Buy shorter domain 
     [ ] Add visits page
     [ ] Add advance metrics to tract like location, which browser, os
+    [ ] Automatically generate QR code for the link and track the no of clicks on that qr code also
 
 ## 3. WHOIS domain lookup
     [ ] Add IP address lookup
@@ -25,4 +26,5 @@
     [ ] Convert to pdf is not working proprely - it is only saving first page, it needs to save all the pages 
     [ ] Add proper url verification as we removed the input type from url to text
     [ ] Add auto scroll in express api
-    [ ] deploy the screenshot api to pythonanywhere
+    [ ] deploy the screenshot api to a proper server (aws lambda)
+    [ ] 
