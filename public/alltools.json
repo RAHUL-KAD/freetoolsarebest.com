@@ -1,11 +1,5 @@
 [   
     {
-        "title": "Email Validation and verification",
-        "desc": "Validate that email address is correct.",
-        "url" : "/email-validation",
-        "button": "Validate Emails"
-    },
-    {
         "title": "URL shortening",
         "desc": "Free URL shortening.",
         "url" : "/short-url",
@@ -27,7 +21,19 @@
         "title": "Text to speech",
         "desc": "Free text to speech generator for more than 20 languages.",
         "url" : "/text-to-speech",
-        "button": "Coming soon"
+        "button": "Text to Speech"
+    },
+    {
+        "title": "URL to Screenshot",
+        "desc": "Capture a screenshots from url.",
+        "url" : "/url-to-screenshot",
+        "button": "Take Screenshots"
+    },
+    {
+        "title": "Email Validation and verification",
+        "desc": "Validate that email address is correct.",
+        "url" : "/email-validation",
+        "button": "Validate Emails"
     },
     {
         "title": "Barcode Generator",
@@ -40,12 +46,6 @@
         "desc": "Lookup registration data for any domain name.",
         "url" : "/domain-lookup",
         "button": "Domain lookup"
-    },
-    {
-        "title": "URL to Screenshot",
-        "desc": "Capture a screenshots from url.",
-        "url" : "/url-to-screenshot",
-        "button": "Take Screenshots"
     },
     {
         "title": "Random color generation",
