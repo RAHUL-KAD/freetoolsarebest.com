@@ -45,7 +45,7 @@
         "title": "URL to Screenshot",
         "desc": "Capture a screenshots from url.",
         "url" : "/url-to-screenshot",
-        "button": "Coming soon"
+        "button": "Take Screenshots"
     },
     {
         "title": "Random color generation",
