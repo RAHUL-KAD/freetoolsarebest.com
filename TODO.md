@@ -28,3 +28,8 @@
     [ ] Add auto scroll in express api
     [ ] deploy the screenshot api to a proper server (aws lambda)
     [ ] 
+
+## 5. Text to speech
+    [ ] Add support for more languages.
+    [ ] Add guide on how to add pause and other emotions.
+    [ ] Add more accents. 
