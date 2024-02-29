@@ -38,4 +38,9 @@
     [ ] Add a way to refresh colors when clicked on space bar
     [ ] Add names to each colors
     [ ] Add use cases from this  - https://coolors.co/pricing
-    
+
+## 7. Image to colors
+    [ ] Add tooltip, i.e on hover it should show the hex values
+    [ ] Add option to export all the values in pdf or any other format
+    [ ] restrict on type of images that it supports so user doesn't upload wrong images.
+    [ ] Add loading animation

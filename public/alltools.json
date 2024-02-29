@@ -64,6 +64,12 @@
         "desc": "SVG Editor and viewer",
         "url" : "/svg-editor",
         "button": "Edit SVG"
+    },
+    {
+        "title": "Image to Colors",
+        "desc": "Extract all the colors from images.",
+        "url" : "/image-colors",
+        "button": "Extract Colors"
     }
     
 ]
