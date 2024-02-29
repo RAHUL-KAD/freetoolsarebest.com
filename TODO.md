@@ -36,3 +36,6 @@
 
 ## 6. random color generator
     [ ] Add a way to refresh colors when clicked on space bar
+    [ ] Add names to each colors
+    [ ] Add use cases from this  - https://coolors.co/pricing
+    

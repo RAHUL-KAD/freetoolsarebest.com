@@ -58,6 +58,12 @@
         "desc": "Detect browser and operating system.",
         "url" : "/random-color",
         "button": "Coming soon"
+    },
+    {
+        "title": "SVG Editor",
+        "desc": "SVG Editor and viewer",
+        "url" : "/svg-editor",
+        "button": "Edit SVG"
     }
     
 ]
