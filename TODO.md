@@ -33,3 +33,6 @@
     [ ] Add support for more languages.
     [ ] Add guide on how to add pause and other emotions.
     [ ] Add more accents. 
+
+## 6. random color generator
+    [ ] Add a way to refresh colors when clicked on space bar

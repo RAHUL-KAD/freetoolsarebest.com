@@ -49,9 +49,9 @@
     },
     {
         "title": "Random color generation",
-        "desc": "Generate random color.",
+        "desc": "Generate random colors.",
         "url" : "/random-color",
-        "button": "Coming soon"
+        "button": "Generate colors"
     },
     {
         "title": "Browser and OS detection",
