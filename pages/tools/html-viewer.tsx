@@ -3,6 +3,8 @@ import AceEditor from 'react-ace';
 import Head from 'next/head';
 import Header from '../../components/Header';
 
+// https://chat.openai.com/share/96f25063-7876-42ea-92da-995df870b178
+
 const HTMLViewer: React.FC = () => {
     const [htmlContent, setHtmlContent] = useState('');
     const [editorWidth, setEditorWidth] = useState<string>('600px');

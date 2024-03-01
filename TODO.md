@@ -48,3 +48,9 @@
 ## 8. Device Info
     [ ] Add support for foldable phones
     [x] remove webrtc as it is asking for camera permision
+
+## 9. HTML viewer and editor
+    [ ] Add live autocomplete
+    [ ] Add way to load from a url
+    [ ] Also a way to upload a html file
+    [ ] Add a sample button which loads a sample html to get started
