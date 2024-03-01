@@ -54,12 +54,6 @@
         "button": "Generate colors"
     },
     {
-        "title": "Browser and OS detection",
-        "desc": "Detect browser and operating system.",
-        "url" : "/random-color",
-        "button": "Coming soon"
-    },
-    {
         "title": "SVG Editor",
         "desc": "SVG Editor and viewer",
         "url" : "/svg-editor",
@@ -70,6 +64,12 @@
         "desc": "Extract all the colors from images.",
         "url" : "/image-colors",
         "button": "Extract Colors"
+    },
+    {
+        "title": "Device info",
+        "desc": "Extract all the info about your device.",
+        "url" : "/device-info",
+        "button": "Get device info"
     }
     
 ]

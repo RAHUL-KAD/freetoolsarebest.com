@@ -44,3 +44,6 @@
     [ ] Add option to export all the values in pdf or any other format
     [ ] restrict on type of images that it supports so user doesn't upload wrong images.
     [ ] Add loading animation
+
+## 8. Device Info
+    [ ] Add support for foldable phones
