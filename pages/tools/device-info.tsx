@@ -142,7 +142,8 @@ const BrowserInfoPage: React.FC = () => {
         // Battery status
         if ("getBattery" in navigator) {
             (navigator.getBattery as () => Promise<BatteryStatus>)().then((battery) => {
-                setBatteryStatus(`${battery.level * 100}%`);
+                const batteryPercentage = Math.round(battery.level * 100); // Round to nearest integer
+                setBatteryStatus(`${batteryPercentage}%`);
 
                 // Calculate remaining time
                 let remainingTime: string;
