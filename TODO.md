@@ -47,3 +47,4 @@
 
 ## 8. Device Info
     [ ] Add support for foldable phones
+    [x] remove webrtc as it is asking for camera permision

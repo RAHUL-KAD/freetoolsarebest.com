@@ -104,13 +104,13 @@ const BrowserInfoPage: React.FC = () => {
         }
 
         // WebRTC support
-        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-            navigator.mediaDevices.getUserMedia({ video: true })
-                .then(() => setWebRtcSupport("Supported"))
-                .catch(() => setWebRtcSupport("Not Supported"));
-        } else {
-            setWebRtcSupport("Not Supported");
-        }
+        // if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+        //     navigator.mediaDevices.getUserMedia({ video: true })
+        //         .then(() => setWebRtcSupport("Supported"))
+        //         .catch(() => setWebRtcSupport("Not Supported"));
+        // } else {
+        //     setWebRtcSupport("Not Supported");
+        // }
 
         // Audio codecs
         if (window.MediaRecorder) {
@@ -294,10 +294,10 @@ const BrowserInfoPage: React.FC = () => {
                         <h2 className="font-bold mb-2">Release Year:</h2>
                         <p>{releaseYear || "Unknown"}</p>
                     </div>
-                    <div className="border p-4">
+                    {/* <div className="border p-4">
                         <h2 className="font-bold mb-2">WebRTC Support:</h2>
                         <p>{webRtcSupport}</p>
-                    </div>
+                    </div> */}
                     <div className="border p-4">
                         <h2 className="font-bold mb-2">Audio Codecs:</h2>
                         <p>{audioCodecs ? audioCodecs.join(", ") : "Not Available"}</p>
