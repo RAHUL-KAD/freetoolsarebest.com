@@ -70,6 +70,12 @@
         "desc": "Extract all the info about your device.",
         "url" : "/device-info",
         "button": "Get device info"
+    },
+    {
+        "title": "HTML viewer and editor",
+        "desc": "View HTML code in realtime as well edit it. Responsive on mobile phones as well.",
+        "url" : "/html-viewer",
+        "button": "View or Edit"
     }
     
 ]
