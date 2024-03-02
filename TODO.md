@@ -6,6 +6,7 @@
     [ ] Add Blogs 
     [ ] Add proper footer
     [ ] Add dark mode
+    [ ] On home page, each tools desc is not being displaed proprely, based on the size it shows ...
 
 ## 1. Email Validator
     [ ] Add batch email upload feature
@@ -54,3 +55,9 @@
     [ ] Add way to load from a url
     [ ] Also a way to upload a html file
     [ ] Add a sample button which loads a sample html to get started
+
+## 10. Extract Youtube Thumbnails
+    [ ] Make sure that you can actually download the image
+    [ ] Add info about resolution below the quality
+    [ ] Add support for shorts
+    [ ] Add loading animation while the image is being loaded

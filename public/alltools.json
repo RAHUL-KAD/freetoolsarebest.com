@@ -76,6 +76,12 @@
         "desc": "View HTML code in realtime as well edit it. Responsive on mobile phones as well.",
         "url" : "/html-viewer",
         "button": "View or Edit"
+    },
+    {
+        "title": "Extract Youtube Thumbnails",
+        "desc": "Download and view thumbnails of any youtube video in all avalible resolutions and qualities.",
+        "url" : "/youtube-thumbnails",
+        "button": "Download"
     }
     
 ]
