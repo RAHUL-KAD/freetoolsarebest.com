@@ -36,7 +36,7 @@ export default function Header() {
 
             <button
               onClick={menuExpand}
-              className="hidden inline-flex items-center justify-center p-2 text-slate-400 hover:text-black focus:outline-none focus:text-black lg:hidden md:hidden"
+              className="hidden items-center justify-center p-2 text-slate-400 hover:text-black focus:outline-none focus:text-black lg:hidden md:hidden"
               id='expand-menu'
               aria-label='Expand Menu'
             >
