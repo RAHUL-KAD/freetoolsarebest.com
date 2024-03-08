@@ -5,6 +5,9 @@ import ErrorBoundary from "./ErrorBoundry";
 import React, { lazy } from 'react';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+// Import the styles provided by the react-pdf-viewer packages
+import '@react-pdf-viewer/core/lib/styles/index.css';
+// import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
 const Footer = lazy(() => import('../components/Footer'));
 

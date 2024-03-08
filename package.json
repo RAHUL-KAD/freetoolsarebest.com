@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@react-pdf-viewer/core": "^3.12.0",
     "@supabase/supabase-js": "^2.39.4",
     "autoprefixer": "^10.4.17",
     "axios": "^1.5.1",
@@ -19,10 +20,12 @@
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
     "next": "13.3.0",
+    "pdfjs-dist": "^3.4.120",
     "randomcolor": "^0.6.2",
     "react": "18.2.0",
     "react-ace": "^10.1.0",
     "react-dom": "18.2.0",
+    "react-drawio": "^0.1.2",
     "react-loading-skeleton": "^3.3.1"
   },
   "devDependencies": {

@@ -81,7 +81,43 @@
         "title": "Extract Youtube Thumbnails",
         "desc": "Download and view thumbnails of any youtube video in all avalible resolutions and qualities.",
         "url" : "/youtube-thumbnails",
-        "button": "Download"
+        "button": "Extract"
+    },
+    {
+        "title": "CSS to Tailwind Converter",
+        "desc": "Effortlessly convert your CSS styles to Tailwind CSS classes for efficient and streamlined web development.",
+        "url" : "/css-tailwindcss",
+        "button": "Coming soon"
+    },
+    {
+        "title": "Markdown Editor",
+        "desc": "A simple markdown editor with preview.",
+        "url" : "/markdown-editor",
+        "button": "Coming soon"
+    },
+    {
+        "title": "Remove audio from any video",
+        "desc": "Mute any video with ease. Removing audio from a video is important if there is poor sound quality, needless dialogue, or unpleasant sounds.",
+        "url" : "/remove-audio-from-video",
+        "button": "Coming soon"
+    },
+    {
+        "title": "SVG to PNG",
+        "desc": "Convert SVG to PNG",
+        "url" : "/svg-png",
+        "button": "Coming soon"
+    },
+    {
+        "title": "Online PDF viewer",
+        "desc": "View PDF's online.",
+        "url" : "/pdf-viewer",
+        "button": "View PDF"
+    },
+    {
+        "title": "Draw.io Embedded UI",
+        "desc": "Draw.io embedded UI",
+        "url" : "/drawio",
+        "button": "View and Edit"
     }
     
 ]

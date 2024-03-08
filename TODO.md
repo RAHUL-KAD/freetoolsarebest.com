@@ -17,6 +17,7 @@
     [ ] Add visits page
     [ ] Add advance metrics to tract like location, which browser, os
     [ ] Automatically generate QR code for the link and track the no of clicks on that qr code also
+    [ ] For websites like github and twitter if user is only sending a username like then add a username from user to make it shorter
 
 ## 3. WHOIS domain lookup
     [ ] Add IP address lookup
@@ -55,9 +56,22 @@
     [ ] Add way to load from a url
     [ ] Also a way to upload a html file
     [ ] Add a sample button which loads a sample html to get started
+    [ ] Add option to see it either horizontal or vertical, by default for mobile phone it is horizontal and for laptop it is vertical.
 
 ## 10. Extract Youtube Thumbnails
     [ ] Make sure that you can actually download the image
     [ ] Add info about resolution below the quality
     [ ] Add support for shorts
     [ ] Add loading animation while the image is being loaded
+
+## 11. PDF viewer
+    [ ] Add more info about PDF viewer - like we don't store your pdf, 
+    [ ] make upload button look good
+    [ ] Add plugins to pdf viewer - https://react-pdf-viewer.dev/plugins/
+    [ ] Add reupload button
+    [ ] View pdf from link 
+    [ ] Add more options at bottom like convert to aother format or 
+
+## 12. Draw.io embedded UI
+    [ ] Updated the desc about it
+    [ ] updated paramaters in drawuiembedded - https://github.com/marcveens/react-drawio?tab=readme-ov-file#start-with-a-few-settings-enabled
