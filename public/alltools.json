@@ -121,15 +121,21 @@
     },
     {
         "title": "JSON Editor and Viewer",
-        "desc": "Upload a .json file to view or edit it online.",
+        "desc": "Upload a .json file or paste to view or edit it online.",
         "url" : "/json-editor",
         "button": "JSON Viewer"
     },
     {
         "title": "XML Editor and Viewer",
-        "desc": "Upload a .xml file to view or edit it online.",
+        "desc": "Upload a .xml file or paste to view or edit it online.",
         "url" : "/xml-editor",
         "button": "XML Viewer"
+    },
+    {
+        "title": "YAML Editor and Viewer",
+        "desc": "Upload a .yaml file or paste to view or edit it online.",
+        "url" : "/yaml-editor",
+        "button": "YAML Viewer"
     }
     
 ]
