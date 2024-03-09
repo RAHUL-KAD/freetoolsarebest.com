@@ -72,7 +72,7 @@
         "button": "Get device info"
     },
     {
-        "title": "HTML viewer and editor",
+        "title": "HTML Editor and Viewer",
         "desc": "View HTML code in realtime as well edit it. Responsive on mobile phones as well.",
         "url" : "/html-viewer",
         "button": "View or Edit"

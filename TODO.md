@@ -75,3 +75,6 @@
 ## 12. Draw.io embedded UI
     [ ] Updated the desc about it
     [ ] updated paramaters in drawuiembedded - https://github.com/marcveens/react-drawio?tab=readme-ov-file#start-with-a-few-settings-enabled
+
+## 13. JSON and XML editor
+    [ ] Add a button which loads a content from url

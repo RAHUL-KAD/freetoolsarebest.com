@@ -59,7 +59,7 @@ const App: React.FC = () => {
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      link.download = "ftools__"+fileName;
+      link.download = "ftools__" + fileName;
       link.click();
       URL.revokeObjectURL(url);
     }
@@ -89,6 +89,19 @@ const App: React.FC = () => {
     }
   };
 
+  const handlePasteJSON = async () => {
+    try {
+        const clipboardData = await navigator.clipboard.readText();
+        setJsonData(clipboardData);
+        setEditorValue(clipboardData);
+        setFileName(null);
+        setError(null); 
+        setViewJSON(true);
+    } catch (error) {
+        console.error('Failed to paste XML:', error);
+    }
+};
+
   return (
     <div className="flex flex-col items-center justify-center mb-10">
 
@@ -104,20 +117,32 @@ const App: React.FC = () => {
           <h1 className="font-display mx-auto max-w-4xl text-center text-5xl font-bold tracking-normal text-slate-900 sm:text-5xl">
             <span className="relative text-[#333] whitespace-wrap">
               <span className="relative mr-2">
-                PDF Viewer
+                JSON Editor
               </span>
             </span>
           </h1>
         </div>
       )}
 
-      <div className='mt-5'>
+      <div className='mt-5 flex flex-col items-center justify-center'>
         <input
           type="file"
           accept=".json"
           onChange={handleFileUpload}
           className="mb-4 px-3 py-2 border border-gray-300 rounded lg:w-[35vw] w-[90vw]"
         />
+
+        {!viewJSON && (
+          <div>
+            <p className='text-center mt-5 mb-5'>OR</p>
+            <button
+              onClick={handlePasteJSON}
+              className="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700 lg:w-[15vw] w-[90vw"
+            >
+              Paste JSON
+            </button>
+          </div>
+        )}
       </div>
       {jsonData && (
         <>

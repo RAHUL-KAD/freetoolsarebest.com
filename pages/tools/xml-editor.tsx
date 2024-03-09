@@ -98,7 +98,18 @@ const App: React.FC = () => {
         }
     };
 
-
+    const handlePasteXML = async () => {
+        try {
+            const clipboardData = await navigator.clipboard.readText();
+            setXmlData(clipboardData);
+            setEditorValue(clipboardData);
+            setFileName(null);
+            setError(null);
+            setViewXML(true);
+        } catch (error) {
+            console.error('Failed to paste XML:', error);
+        }
+    };
 
     return (
         <div className="flex flex-col items-center justify-center mb-10">
@@ -122,13 +133,24 @@ const App: React.FC = () => {
                 </div>
             )}
 
-            <div className='mt-5'>
+            <div className='mt-5 flex flex-col items-center justify-center'>
                 <input
                     type="file"
                     accept=".xml"
                     onChange={handleFileUpload}
                     className="mb-4 px-3 py-2 border border-gray-300 rounded lg:w-[35vw] w-[90vw]"
                 />
+                {!viewXML && (
+                    <div>
+                        <p className='text-center mt-5 mb-5'>OR</p>
+                        <button
+                            onClick={handlePasteXML}
+                            className="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700 lg:w-[15vw] w-[90vw"
+                        >
+                            Paste XML
+                        </button>
+                    </div>
+                )}
             </div>
             {xmlData && (
                 <>
