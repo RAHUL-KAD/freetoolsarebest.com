@@ -136,6 +136,18 @@
         "desc": "Upload a .yaml file or paste to view or edit it online.",
         "url" : "/yaml-editor",
         "button": "YAML Viewer"
+    },
+    {
+        "title": "XML to JSON converter",
+        "desc": "Convert XML to JSON.",
+        "url" : "/xml-json",
+        "button": "XML to JSON"
+    },
+    {
+        "title": "JSON to YAML converter",
+        "desc": "Convert JSON to YAML.",
+        "url" : "/json-yaml",
+        "button": "JSON to YAML"
     }
     
 ]
