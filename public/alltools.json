@@ -148,6 +148,18 @@
         "desc": "Convert JSON to YAML.",
         "url" : "/json-yaml",
         "button": "JSON to YAML"
+    },
+    {
+        "title": "XML to YAML converter",
+        "desc": "Convert XML to YAML.",
+        "url" : "/xml-yaml",
+        "button": "XML to YAML"
+    },
+    {
+        "title": "YAML to XML converter",
+        "desc": "Convert YAML to XML.",
+        "url" : "/yaml-xml",
+        "button": "YAML to XML"
     }
     
 ]
