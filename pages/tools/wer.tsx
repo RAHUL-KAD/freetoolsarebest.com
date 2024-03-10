@@ -3,7 +3,7 @@ import { wordErrorRate } from "word-error-rate";
 import Header from "../../components/Header";
 import Head from "next/head";
 
-const App: React.FC = () => {
+const WER: React.FC = () => {
   const [referenceText, setReferenceText] = useState<string>("");
   const [transcribedText, setTranscribedText] = useState<string>("");
   const [convertToLowercase, setConvertToLowercase] = useState<boolean>(false);
@@ -107,13 +107,14 @@ const App: React.FC = () => {
       <Header />
       <div className="">
         <h1 className="text-2xl font-bold mb-4 text-center mt-5">Word Error Rate Calculator</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="mb-4">
           <label htmlFor="referenceText" className="block mb-2">
             Reference Text:
           </label>
           <textarea
             id="referenceText"
-            className="w-full p-2 border rounded"
+            className="border border-gray-300 rounded-md p-2 w-full h-[300px]"
             value={referenceText}
             onChange={(e) => setReferenceText(e.target.value)}
           />
@@ -124,11 +125,13 @@ const App: React.FC = () => {
           </label>
           <textarea
             id="transcribedText"
-            className="w-full p-2 border rounded"
+            className="border border-gray-300 rounded-md p-2 w-full h-[300px]"
             value={transcribedText}
             onChange={(e) => setTranscribedText(e.target.value)}
           />
         </div>
+        </div>
+
         <div className="mb-4">
           <input
             type="checkbox"
@@ -168,4 +171,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default WER;
