@@ -172,6 +172,12 @@
         "desc": "Convert JSON to XML.",
         "url" : "/json-xml",
         "button": "JSON to XML"
+    },
+    {
+        "title": "Word Error Rate Calculator",
+        "desc": "Word Error Rate Calculator",
+        "url" : "/wer",
+        "button": "Calculate WER"
     }
     
 ]
