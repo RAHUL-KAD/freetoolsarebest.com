@@ -83,76 +83,78 @@ const App: React.FC = () => {
     };
 
     return (
-        <div className="container mx-auto p-4">
+        <div className="py-2">
             <Head>
                 <title>XML Editor and Viewer | freetoolsarebest </title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
-            <h1 className="text-3xl font-bold text-center mt-5 mb-5">JSON to XML Converter</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                    <label htmlFor="json-input" className="block font-bold mb-2">
-                        JSON Input
-                    </label>
-                    <textarea
-                        id="json-input"
-                        className="border border-gray-300 rounded-md p-2 w-full h-[400px]"
-                        rows={10}
-                        value={json}
-                        onChange={handleJsonChange}
-                    />
-                    <div className="flex gap-10 mt-4">
-                        <label
-                            htmlFor="file-input"
-                            className="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded cursor-pointer"
-                        >
-                            Upload JSON File
+            <div className='p-4'>
+                <h1 className="text-3xl font-bold text-center mt-5 mb-5">JSON to XML Converter</h1>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label htmlFor="json-input" className="block font-bold mb-2">
+                            JSON Input
                         </label>
-                        <input
-                            id="file-input"
-                            type="file"
-                            accept=".json"
-                            className="hidden"
-                            onChange={handleFileUpload}
+                        <textarea
+                            id="json-input"
+                            className="border border-gray-300 rounded-md p-2 w-full h-[400px]"
+                            rows={10}
+                            value={json}
+                            onChange={handleJsonChange}
                         />
-
-                        <button
-                            className="bg-blue-700 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
-                            onClick={convertJsonToXml}
-                        >
-                            Convert
-                        </button>
-                    </div>
-                </div>
-
-                <div className="relative">
-                    <label htmlFor="xml-output" className="block font-bold mb-2">
-                        XML Output
-                    </label>
-                    {error && <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">{error}</div>}
-                    <pre
-                        className="bg-gray-100 rounded-md p-4 overflow-auto prose prose-sm"
-                        style={{ maxHeight: '400px' }}
-                    >
-                        {xmlResult}
-                    </pre>
-                    {xmlResult && (
-                        <div className="absolute bottom-4 right-4 flex gap-4">
-                            <button
-                                className="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 rounded"
-                                onClick={copyXmlToClipboard}
+                        <div className="flex gap-10 mt-4">
+                            <label
+                                htmlFor="file-input"
+                                className="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded cursor-pointer"
                             >
-                                {copied ? 'Copied!' : 'Copy'}
-                            </button>
+                                Upload JSON File
+                            </label>
+                            <input
+                                id="file-input"
+                                type="file"
+                                accept=".json"
+                                className="hidden"
+                                onChange={handleFileUpload}
+                            />
+
                             <button
-                                className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded"
-                                onClick={saveXmlToFile}
+                                className="bg-blue-700 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+                                onClick={convertJsonToXml}
                             >
-                                Save
+                                Convert
                             </button>
                         </div>
-                    )}
+                    </div>
+
+                    <div className="relative">
+                        <label htmlFor="xml-output" className="block font-bold mb-2">
+                            XML Output
+                        </label>
+                        {error && <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">{error}</div>}
+                        <pre
+                            className="bg-gray-100 rounded-md p-4 overflow-auto prose prose-sm"
+                            style={{ maxHeight: '400px' }}
+                        >
+                            {xmlResult}
+                        </pre>
+                        {xmlResult && (
+                            <div className="absolute bottom-4 right-4 flex gap-4">
+                                <button
+                                    className="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 rounded"
+                                    onClick={copyXmlToClipboard}
+                                >
+                                    {copied ? 'Copied!' : 'Copy'}
+                                </button>
+                                <button
+                                    className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded"
+                                    onClick={saveXmlToFile}
+                                >
+                                    Save
+                                </button>
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>

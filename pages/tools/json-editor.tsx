@@ -103,7 +103,7 @@ const App: React.FC = () => {
 };
 
   return (
-    <div className="flex flex-col items-center justify-center mb-10">
+    <div className="flex flex-col items-center justify-center mb-10 py-2">
 
       <Head>
         <title>JSON Editor and Viewer | freetoolsarebest </title>

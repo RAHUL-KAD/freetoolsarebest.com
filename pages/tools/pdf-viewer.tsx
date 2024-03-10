@@ -23,7 +23,7 @@ const PdfViewer: React.FC = () => {
   };
 
   return (
-    <div className=''>
+    <div className='py-2'>
       <Head>
         <title>PDF viewer | freetoolsarebest </title>
         <link rel="icon" href="/favicon.ico" />
