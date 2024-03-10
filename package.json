@@ -28,6 +28,7 @@
     "react-dom": "18.2.0",
     "react-drawio": "^0.1.2",
     "react-loading-skeleton": "^3.3.1",
+    "word-error-rate": "^0.0.7",
     "xml-js": "^1.6.11",
     "xml2js": "^0.6.2"
   },
