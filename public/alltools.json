@@ -178,6 +178,12 @@
         "desc": "Word Error Rate Calculator",
         "url" : "/wer",
         "button": "Calculate WER"
+    },
+    {
+        "title": "Lorem Ipsum Generator",
+        "desc": "This generates Lorem Ipsum text, you can choose how many paragraph or sentences you want to generate.",
+        "url" : "/lorem-ipsum-generator",
+        "button": "Generate Lorem"
     }
     
 ]

@@ -3,6 +3,8 @@ import { wordErrorRate } from "word-error-rate";
 import Header from "../../components/Header";
 import Head from "next/head";
 
+// https://chat.openai.com/share/0cece9b5-d202-4e6b-98ee-e002dae66242
+
 const WER: React.FC = () => {
     const [referenceText, setReferenceText] = useState<string>("");
     const [transcribedText, setTranscribedText] = useState<string>("");
