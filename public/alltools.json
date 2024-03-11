@@ -190,6 +190,12 @@
         "desc": "This generates Lorem Ipsum text, you can choose how many paragraph or sentences you want to generate.",
         "url" : "/lorem-ipsum-generator",
         "button": "Generate Lorem"
+    },
+    {
+        "title": "Text Converter",
+        "desc": "Convert your text into lower case, capital case and into many other cases.",
+        "url" : "/text-converter",
+        "button": "Convert text"
     }
     
 ]
