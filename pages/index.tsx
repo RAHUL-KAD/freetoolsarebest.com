@@ -13,7 +13,7 @@ const Home: NextPage = () => {
     <div className="w-[100%] flex flex-col items-center justify-center py-2">
       <Head>
         <title>freetoolsarebest | Use all the tools for free </title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="svg" href="/favicon.svg" />
       </Head>
 
       <svg

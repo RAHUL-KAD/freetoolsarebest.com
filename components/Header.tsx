@@ -19,14 +19,14 @@ export default function Header() {
           <div className="flex flex-row items-center justify-between lg:justify-start">
           <Link href="/" className="flex space-x-2">
 
-            {/* <Image
+            <Image
               alt="header text"
               src="/favicon.svg"
               className="sm:w-12 sm:h-12 w-10 h-10"
               width={25}
               height={25}
-          /> */}
-            <h1 className="sm:text-3xl text-3xl font-bold  tracking-tight">
+          />
+            <h1 className=" lg:text-3xl text-2xl font-bold  tracking-tight">
             freetoolsarebest.com &nbsp;
             <sup >
               {/* <small className="text-base">Beta</small> */}
@@ -65,12 +65,12 @@ export default function Header() {
           </div>
 
           <nav
-            className={`md:hidden sm:hidden lg:block flex-col lg:items-end items-center  ${
+            className={`md:block sm:hidden lg:block flex-col lg:items-end items-center  ${
               open ? "flex" : "hidden"
             } md:pb-0 md:flex md:justify-end md:flex-row mt-10 sm:mt-0`}
           >
             <a
-              className="px-2 lg:px-6 py-2 md:px-3 text-lg font-medium text-black hover:text-accent-400 lg:ml-auto"
+              className="px-2 lg:px-6 py-2 md:px-3 lg:text-lg font-medium md:text-sm text-black hover:text-accent-400 lg:ml-auto"
               href="/#freetools"
             >
               Explore All tools
@@ -85,13 +85,13 @@ export default function Header() {
             </details> */}
             
             <a
-              className="px-2 lg:px-6 py-2 md:px-3 text-lg font-medium text-black hover:text-accent-400"
+              className="px-2 lg:px-6 py-2 md:px-3 lg:text-lg font-medium md:text-sm text-black hover:text-accent-400"
               href="/"
             >
               Changlog
             </a>
             <a
-              className="px-2 lg:px-6 py-2 md:px-3 text-lg font-medium text-black hover:text-accent-400"
+              className="px-2 lg:px-6 py-2 md:px-3 lg:text-lg font-medium md:text-sm text-black hover:text-accent-400"
               target="_blank"
               rel="noopener noreferrer"
               href="https://twitter.com/rahul_jalindar"
