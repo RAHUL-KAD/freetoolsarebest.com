@@ -3,6 +3,8 @@ import { loremIpsum } from 'lorem-ipsum';
 import Header from '../../components/Header';
 import Head from 'next/head';
 
+// https://chat.openai.com/share/4e5da110-bf88-4e8c-b6e7-8c4f19e4fbce
+
 type LoremType = 'paragraphs' | 'sentences' | 'words' | 'list';
 
 const LoremIpsumGenerator: React.FC = () => {
