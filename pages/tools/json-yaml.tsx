@@ -77,11 +77,11 @@ const App: React.FC = () => {
     return (
         <div className="py-2">
             <Head>
-                <title>YAML Editor and Viewer | freetoolsarebest </title>
+                <title>JSON to YAML converter | freetoolsarebest </title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
-            <div className='p-4'>
+            <div className='p-4  lg:px-[5.5rem] md:px-10'>
                 <h1 className="text-3xl font-bold text-center mt-5 mb-5">JSON to YAML Converter</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>

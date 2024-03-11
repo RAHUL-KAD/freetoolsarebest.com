@@ -135,7 +135,7 @@ export default function EmailValidation() {
 
         <div className="w-[100%] flex flex-col items-center justify-center py-2">
             <Head>
-                <title>freetoolsarebest | Use all the tools for free </title>
+                <title>Email Validation | Use all the tools for free </title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 

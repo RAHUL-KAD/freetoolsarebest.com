@@ -161,7 +161,7 @@ const TextConverterPage: React.FC = () => {
     return (
         <div className="py-2">
             <Head>
-                <title>Free Lorem Ipsum Generator | freetoolsarebest </title>
+                <title>Text Converter | freetoolsarebest </title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
@@ -248,7 +248,7 @@ const TextConverterPage: React.FC = () => {
                             {showMore ? 'Show Less' : 'Show More'}
                         </button>
                         <button className="bg-green-500 text-sm h-[2.3rem] text-white px-3 rounded mr-2 hover:bg-green-600" onClick={handleClear}>
-                            Clear
+                            Reset
                         </button>
                         <button className="bg-green-500 text-sm h-[2.3rem] text-white px-3 rounded mr-2 hover:bg-green-600" onClick={handleCopy}>
                             {copied ? 'Copied!' : 'Copy'}

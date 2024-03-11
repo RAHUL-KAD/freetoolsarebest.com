@@ -114,11 +114,11 @@ const WER: React.FC = () => {
     return (
         <div className="py-2">
             <Head>
-                <title>WER Calculator | freetoolsarebest </title>
+                <title>Word Error Rate Calculator | freetoolsarebest </title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
-            <div className="p-4">
+            <div className="p-4  lg:px-[5.5rem] md:px-10">
                 <h1 className="text-2xl font-bold mb-4 text-center mt-5">Word Error Rate Calculator</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="mb-4">
@@ -186,13 +186,15 @@ const WER: React.FC = () => {
                                 <p>{error}</p>
                             </div>
                         )}
-                        {wer !== null && (
-                            <div className="mt-4">
-                                <p>
-                                    Word Error Rate: <strong>{wer.toFixed(2)}%</strong>
-                                </p>
-                            </div>
-                        )}
+                        <div className="flex justify-center items-center">
+                            {wer !== null && (
+                                <div className="mt-4">
+                                    <p>
+                                        Word Error Rate: <strong>{wer.toFixed(2)}%</strong>
+                                    </p>
+                                </div>
+                            )}
+                        </div>
                     </div>
                 </div>
             </div>

@@ -50,7 +50,7 @@ function ImageToColors() {
 
         <div className="w-[100%] flex flex-col items-center justify-center py-2">
             <Head>
-                <title>Random Color Generator | freetoolsarebest </title>
+                <title>Extract Colors from Image | freetoolsarebest </title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
