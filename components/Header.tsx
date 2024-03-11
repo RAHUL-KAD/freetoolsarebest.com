@@ -26,7 +26,7 @@ export default function Header() {
               width={25}
               height={25}
           />
-            <h1 className=" lg:text-3xl text-2xl font-bold  tracking-tight">
+            <h1 className="lg:text-3xl text-[1.5rem] font-bold  tracking-tight">
             freetoolsarebest.com &nbsp;
             <sup >
               {/* <small className="text-base">Beta</small> */}

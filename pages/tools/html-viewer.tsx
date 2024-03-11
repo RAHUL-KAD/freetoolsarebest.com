@@ -15,9 +15,12 @@ const HTMLViewer: React.FC = () => {
             if (window.innerWidth <= 768) {
                 setEditorWidth('90vw');
                 setEditorHeight('60vh');
-            } else {
+            } else if(window.innerWidth >= 768 && window.innerWidth <= 1024) {
                 setEditorWidth('700px');
                 setEditorHeight('400px');
+            } else{
+                setEditorWidth('900px');
+                setEditorHeight('500px');
             }
         };
 
