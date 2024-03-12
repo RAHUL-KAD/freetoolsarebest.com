@@ -12,6 +12,9 @@ const LoremIpsumGenerator: React.FC = () => {
     const [count, setCount] = useState<number>(5);
     const [generatedLorem, setGeneratedLorem] = useState<string[]>([]); // Changed to array of strings
     const [copied, setCopied] = useState(false);
+    const [inputError, setInputError] = useState<string | null>(null);
+
+    const max_value = 10000;
 
     const generateLorem = () => {
         let loremText = '';
@@ -66,11 +69,25 @@ const LoremIpsumGenerator: React.FC = () => {
         const blob = new Blob([textToSave], { type: 'text/plain' });
         const url = URL.createObjectURL(blob);
         const link = document.createElement('a');
-        link.download = `generatedLorem_${type}_ftools.txt`;
+        link.download = `Lorem_Ipsum_${type}_ftools.txt`;
         link.href = url;
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
+    };
+
+    const handleCountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const value = parseInt(e.target.value);
+        if (value > max_value) {
+            setInputError(`Maximum input value is ${max_value}`);
+            setCount(10000);
+            setTimeout(() => {
+                setInputError("");
+            }, 4000);
+        } else {
+            setInputError(null);
+            setCount(value);
+        }
     };
 
     return (
@@ -108,9 +125,11 @@ const LoremIpsumGenerator: React.FC = () => {
                                 type="number"
                                 id="count"
                                 value={count}
-                                onChange={(e) => setCount(parseInt(e.target.value))}
+                                onChange={handleCountChange}
                                 className="p-2 border rounded w-[7rem]"
+                                max={max_value} // Set maximum value here
                             />
+                            {inputError && <p className="text-red-500">{inputError}</p>}
                         </div>
                     </div>
 
