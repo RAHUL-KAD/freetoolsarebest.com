@@ -8,7 +8,7 @@ export default function Freetools() {
     <section id="freetools" className="max-w-full pb-10 md:pt-5">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 max-w-7xl">
+        <div className="mt-10 grid grid-cols-1 gap-7 md:grid-cols-2 max-w-7xl lg:w-[70rem]">
 
           {tools.map((episod, index) => (
             <>
@@ -36,7 +36,7 @@ export default function Freetools() {
                     
                   </div>
                   <a
-                      href={`tools/${episod.url}`}
+                      href={`tools${episod.url}`}
                       className="me-2 lg:ml-5 ml-2 md:ml-5 w-36 lg:mt-5 sm:mt-2 md:mt-2 mt-1 mb-2 rounded-lg border border-blue-700 px-2 py-1 text-center text-sm font-medium text-blue-700 hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-blue-500 dark:text-blue-500 dark:hover:bg-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
                     >
                       {episod.button}

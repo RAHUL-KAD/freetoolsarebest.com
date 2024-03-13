@@ -113,7 +113,7 @@ export default function URLToScreenshot() {
 
         <div className="w-[100%] flex flex-col items-center justify-center py-2">
             <Head>
-                <title>URL To Screenshots | freetoolsarebest </title>
+                <title>URL To Screenshot | freetoolsarebest </title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
@@ -150,7 +150,7 @@ export default function URLToScreenshot() {
                     <h1 className="font-display mx-auto max-w-4xl text-center text-5xl font-bold tracking-normal text-slate-900 sm:text-5xl">
                         <span className="relative text-[#333] whitespace-wrap">
                             <span className="relative mr-2">
-                                URL to Screenshots
+                                URL to Screenshot
                             </span>
                         </span>
                     </h1>
@@ -158,7 +158,7 @@ export default function URLToScreenshot() {
                     <h1 className="mt-5 font-display mx-auto max-w-3xl text-center text-lg tracking-normal text-[#333] sm:text-lg">
                         <span className="relative text-[#333] whitespace-wrap">
                             <span className="relative mr-2">
-                                An easy way to capture a screenshot of a full webpage
+                                An easy way to capture a screenshot of a full webpage. You can download the screenshot.
                             </span>
                         </span>
                     </h1>

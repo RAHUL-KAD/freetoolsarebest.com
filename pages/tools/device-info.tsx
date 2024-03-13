@@ -240,81 +240,81 @@ const BrowserInfoPage: React.FC = () => {
                     </span>
                 </h1>
             </div>
-            <div className="container mx-auto md:p-10 p-4 lg:w-[65rem] ">
-                <div className="grid grid-cols-2 gap-4">
-                    <div className="border p-4">
+            <div className="container mx-auto md:p-10 p-4 lg:w-[60rem]">
+                <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-4">
+                    <div className="border p-4 rounded-md border-gray-300">
                         <h2 className="font-bold mb-2">Browser Name:</h2>
                         <p>{browserName}</p>
                     </div>
-                    <div className="border p-4">
+                    <div className="border p-4 rounded-md border-gray-300">
                         <h2 className="font-bold mb-2">Browser Version:</h2>
                         <p>{browserVersion}</p>
                     </div>
-                    <div className="border p-4">
+                    <div className="border p-4 rounded-md border-gray-300">
                         <h2 className="font-bold mb-2">Operating System:</h2>
                         <p>{osInfo}</p>
                     </div>
-                    <div className="border p-4">
+                    <div className="border p-4 rounded-md border-gray-300">
                         <h2 className="font-bold mb-2">Operating System Version:</h2>
                         <p>{osVersion}</p>
                     </div>
-                    <div className="border p-4">
+                    <div className="border p-4 rounded-md border-gray-300">
                         <h2 className="font-bold mb-2">Device Type:</h2>
                         <p>{deviceType}</p>
                     </div>
-                    <div className="border p-4">
+                    <div className="border p-4 rounded-md border-gray-300">
                         <h2 className="font-bold mb-2">Screen Size:</h2>
                         <p>{screenSize}</p>
                     </div>
-                    <div className="border p-4">
+                    <div className="border p-4 rounded-md border-gray-300">
                         <h2 className="font-bold mb-2">CPU Cores:</h2>
                         <p>{cpuCores}</p>
                     </div>
-                    <div className="border p-4">
+                    <div className="border p-4 rounded-md border-gray-300">
                         <h2 className="font-bold mb-2">Touchscreen:</h2>
                         <p>{isTouchscreen ? "Yes" : "No"}</p>
                     </div>
-                    <div className="border p-4">
+                    <div className="border p-4 rounded-md border-gray-300">
                         <h2 className="font-bold mb-2">Hardware Classification:</h2>
                         <p>{hardwareClassification}</p>
                     </div>
-                    <div className="border p-4">
+                    <div className="border p-4 rounded-md border-gray-300">
                         <h2 className="font-bold mb-2">GPU:</h2>
                         <p>{hasGPU ? "Yes" : "No"}</p>
                     </div>
-                    <div className="border p-4">
+                    <div className="border p-4 rounded-md border-gray-300">
                         <h2 className="font-bold mb-2">GPU Vendor:</h2>
                         <p>{gpuVendor}</p>
                     </div>
-                    <div className="border p-4">
+                    <div className="border p-4 rounded-md border-gray-300">
                         <h2 className="font-bold mb-2">GPU Renderer:</h2>
                         <p>{gpuRenderer}</p>
                     </div>
-                    <div className="border p-4">
+                    <div className="border p-4 rounded-md border-gray-300">
                         <h2 className="font-bold mb-2">Release Year:</h2>
                         <p>{releaseYear || "Unknown"}</p>
                     </div>
-                    {/* <div className="border p-4">
+                    {/* <div className="border p-4 rounded-md border-gray-300">
                         <h2 className="font-bold mb-2">WebRTC Support:</h2>
                         <p>{webRtcSupport}</p>
                     </div> */}
-                    <div className="border p-4">
+                    <div className="border p-4 rounded-md border-gray-300">
                         <h2 className="font-bold mb-2">Audio Codecs:</h2>
                         <p>{audioCodecs ? audioCodecs.join(", ") : "Not Available"}</p>
                     </div>
-                    <div className="border p-4">
+                    <div className="border p-4 rounded-md border-gray-300">
                         <h2 className="font-bold mb-2">Video Codecs:</h2>
                         <p>{videoCodecs ? videoCodecs.join(", ") : "Not Available"}</p>
                     </div>
-                    <div className="border p-4">
+                    <div className="border p-4 rounded-md border-gray-300">
                         <h2 className="font-bold mb-2">Available Storage:</h2>
                         <p>{availableStorage}</p>
                     </div>
-                    <div className="border p-4">
+                    <div className="border p-4 rounded-md border-gray-300">
                         <h2 className="font-bold mb-2">Battery Status:</h2>
                         <p>{batteryStatus}</p>
                     </div>
-                    <div className="border p-4">
+                    <div className="border p-4 rounded-md border-gray-300">
                         <h2 className="font-bold mb-2">Battery remaining time:</h2>
                         <p>{remainingTime}</p>
                     </div>
