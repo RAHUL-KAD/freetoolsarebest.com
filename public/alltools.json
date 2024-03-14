@@ -204,6 +204,18 @@
         "button": "Get info"
     },
     {
+        "title": "Combine Two or More TXT files",
+        "desc": "You can combine two or more .txt files with each other and also remove duplicates from final .txt  file.",
+        "url": "/combine-txt-files",
+        "button": "Coming soon"
+    },
+    {
+        "title": "Remove Duplicates from .txt file",
+        "desc": "Remove all duplicate values from a .txt file",
+        "url": "/remove-duplicate-from-txt",
+        "button": "Remove duplicates"
+    },
+    {
         "title": "IPv4 addresses generator",
         "desc": "Generate random IPv4 addresses and Bulk download them.",
         "url": "/ip/random-ipv4",
