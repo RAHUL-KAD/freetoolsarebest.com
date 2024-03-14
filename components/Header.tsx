@@ -22,7 +22,7 @@ export default function Header() {
             <Image
               alt="header text"
               src="/favicon.svg"
-              className="sm:w-12 sm:h-12 w-10 h-10"
+              className="sm:w-12 sm:h-10 w-10 h-10"
               width={25}
               height={25}
           />
