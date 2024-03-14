@@ -19,12 +19,13 @@ const ScreenInfo: React.FC = () => {
     });
 
     useEffect(() => {
+        const screenAspect = parseFloat((window.screen.width / window.screen.height).toFixed(2));
         const updateScreenInfo = () => {
             setScreenInfo({
                 width: window.screen.width,
                 height: window.screen.height,
                 pixelDensity: window.devicePixelRatio,
-                aspectRatio: window.screen.width / window.screen.height,
+                aspectRatio: screenAspect,
                 orientation: window.screen.orientation.type,
                 deviceType: getDeviceType(),
                 colorDepth: window.screen.colorDepth,
