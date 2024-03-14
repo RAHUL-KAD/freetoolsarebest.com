@@ -238,5 +238,23 @@
         "desc": "Generate random Multicast IPv6 addresses and Bulk download them.",
         "url": "/ip/multicast-ipv6",
         "button": "Generate"
+    },
+    {
+        "title": "Broadcast IPv4 addresses generator",
+        "desc": "Generate random Broadcast IPv4 addresses and Bulk download them.",
+        "url": "/ip/broadcast-ipv4",
+        "button": "Generate"
+    },
+    {
+        "title": "Private IPv4 addresses generator",
+        "desc": "Generate random Private IPv4 addresses and Bulk download them.",
+        "url": "/ip/private-ipv4",
+        "button": "Generate"
+    },
+    {
+        "title": "Private IPv6 addresses generator",
+        "desc": "Generate random Private IPv6 addresses and Bulk download them.",
+        "url": "/ip/private-ipv6",
+        "button": "Generate"
     }
 ]
