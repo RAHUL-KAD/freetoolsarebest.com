@@ -31,7 +31,7 @@
     },
     {
         "title": "Email Validation and verification",
-        "desc": "Validate that email address is correct.",
+        "desc": "Validate that email addresses are correct.",
         "url" : "/email-validation",
         "button": "Validate Emails"
     },
@@ -196,6 +196,23 @@
         "desc": "Convert your text into lower case, capital case and into many other cases.",
         "url" : "/text-converter",
         "button": "Convert text"
+    },
+    {
+        "title": "My Screen Info",
+        "desc": "Understand your devices screen better, get screen size, Pixel Density, Aspect Ratio, Orientation and many other." ,
+        "url" : "/my-screen-info",
+        "button": "Get info"
+    },
+    {
+        "title": "IPv4 addresses generator",
+        "desc": "Generate random IPv4 addresses and Bulk download them.",
+        "url" : "/ip/random-ipv4",
+        "button": "Generate"
+    },
+    {
+        "title": "IPv6 addresses generator",
+        "desc": "Generate random IPv6 addresses and Bulk download them.",
+        "url" : "/ip/random-ipv6",
+        "button": "Generate"
     }
-    
 ]
