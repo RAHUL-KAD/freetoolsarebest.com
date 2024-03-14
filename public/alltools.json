@@ -1,8 +1,8 @@
-[   
+[
     {
         "title": "URL shortening",
         "desc": "Free URL shortening.",
-        "url" : "/short-url",
+        "url": "/short-url",
         "button": "URL shortening"
     },
     {
@@ -20,199 +20,211 @@
     {
         "title": "Text to speech",
         "desc": "Free text to speech generator for more than 20 languages.",
-        "url" : "/text-to-speech",
+        "url": "/text-to-speech",
         "button": "Text to Speech"
     },
     {
         "title": "URL to Screenshot",
         "desc": "Capture a screenshots from url.",
-        "url" : "/url-to-screenshot",
+        "url": "/url-to-screenshot",
         "button": "Take Screenshots"
     },
     {
         "title": "Email Validation and verification",
         "desc": "Validate that email addresses are correct.",
-        "url" : "/email-validation",
+        "url": "/email-validation",
         "button": "Validate Emails"
     },
     {
         "title": "Barcode Generator",
         "desc": "Generate unique barcodes to track and organize your product.",
-        "url" : "/barcode-generator",
+        "url": "/barcode-generator",
         "button": "Coming soon"
     },
     {
         "title": "WHOIS domain lookup",
         "desc": "Lookup registration data for any domain name.",
-        "url" : "/domain-lookup",
+        "url": "/domain-lookup",
         "button": "Domain lookup"
     },
     {
         "title": "Random color generation",
         "desc": "Generate random colors.",
-        "url" : "/random-color",
+        "url": "/random-color",
         "button": "Generate colors"
     },
     {
         "title": "SVG Editor",
         "desc": "SVG Editor and viewer",
-        "url" : "/svg-editor",
+        "url": "/svg-editor",
         "button": "Edit SVG"
     },
     {
         "title": "Image to Colors",
         "desc": "Extract all the colors from images.",
-        "url" : "/image-colors",
+        "url": "/image-colors",
         "button": "Extract Colors"
     },
     {
         "title": "Device info",
         "desc": "Extract all the info about your device.",
-        "url" : "/device-info",
+        "url": "/device-info",
         "button": "Get device info"
     },
     {
         "title": "HTML Editor and Viewer",
         "desc": "View HTML code in realtime as well edit it. Responsive on mobile phones as well.",
-        "url" : "/html-viewer",
+        "url": "/html-viewer",
         "button": "View or Edit"
     },
     {
         "title": "Extract Youtube Thumbnails",
         "desc": "Download and view thumbnails of any youtube video in all avalible resolutions and qualities.",
-        "url" : "/youtube-thumbnails",
+        "url": "/youtube-thumbnails",
         "button": "Extract"
     },
     {
         "title": "CSS to Tailwind Converter",
         "desc": "Effortlessly convert your CSS styles to Tailwind CSS classes for efficient and streamlined web development.",
-        "url" : "/css-tailwindcss",
+        "url": "/css-tailwindcss",
         "button": "Coming soon"
     },
     {
         "title": "Markdown Editor",
         "desc": "A simple markdown editor with preview.",
-        "url" : "/markdown-editor",
+        "url": "/markdown-editor",
         "button": "Coming soon"
     },
     {
         "title": "Remove audio from any video",
         "desc": "Mute any video with ease. Removing audio from a video is important if there is poor sound quality, needless dialogue, or unpleasant sounds.",
-        "url" : "/remove-audio-from-video",
+        "url": "/remove-audio-from-video",
         "button": "Coming soon"
     },
     {
         "title": "SVG to PNG",
         "desc": "Convert SVG to PNG",
-        "url" : "/svg-png",
+        "url": "/svg-png",
         "button": "Coming soon"
     },
     {
         "title": "Online PDF viewer",
         "desc": "View PDF's online.",
-        "url" : "/pdf-viewer",
+        "url": "/pdf-viewer",
         "button": "View PDF"
     },
     {
         "title": "Draw.io Embedded UI",
         "desc": "Draw.io embedded UI",
-        "url" : "/drawio",
+        "url": "/drawio",
         "button": "View and Edit"
     },
     {
         "title": "JSON Editor and Viewer",
         "desc": "Upload a .json file or paste to view or edit it online.",
-        "url" : "/json-editor",
+        "url": "/json-editor",
         "button": "JSON Viewer"
     },
     {
         "title": "XML Editor and Viewer",
         "desc": "Upload a .xml file or paste to view or edit it online.",
-        "url" : "/xml-editor",
+        "url": "/xml-editor",
         "button": "XML Viewer"
     },
     {
         "title": "YAML Editor and Viewer",
         "desc": "Upload a .yaml file or paste to view or edit it online.",
-        "url" : "/yaml-editor",
+        "url": "/yaml-editor",
         "button": "YAML Viewer"
     },
     {
         "title": "XML to JSON converter",
         "desc": "Convert XML to JSON.",
-        "url" : "/xml-json",
+        "url": "/xml-json",
         "button": "XML to JSON"
     },
     {
         "title": "JSON to YAML converter",
         "desc": "Convert JSON to YAML.",
-        "url" : "/json-yaml",
+        "url": "/json-yaml",
         "button": "JSON to YAML"
     },
     {
         "title": "XML to YAML converter",
         "desc": "Convert XML to YAML.",
-        "url" : "/xml-yaml",
+        "url": "/xml-yaml",
         "button": "XML to YAML"
     },
     {
         "title": "YAML to XML converter",
         "desc": "Convert YAML to XML.",
-        "url" : "/yaml-xml",
+        "url": "/yaml-xml",
         "button": "YAML to XML"
     },
     {
         "title": "YAML to JSON converter",
         "desc": "Convert YAML to JSON.",
-        "url" : "/yaml-json",
+        "url": "/yaml-json",
         "button": "YAML to JSON"
     },
     {
         "title": "JSON to XML converter",
         "desc": "Convert JSON to XML.",
-        "url" : "/json-xml",
+        "url": "/json-xml",
         "button": "JSON to XML"
     },
     {
         "title": "CSV to XML converter",
         "desc": "Convert CSV to XML.",
-        "url" : "/csv-xml",
+        "url": "/csv-xml",
         "button": "CSV to XML"
     },
     {
         "title": "Word Error Rate Calculator",
         "desc": "Word Error Rate Calculator",
-        "url" : "/wer",
+        "url": "/wer",
         "button": "Calculate WER"
     },
     {
         "title": "Lorem Ipsum Generator",
         "desc": "This generates Lorem Ipsum text, you can choose how many paragraph or sentences you want to generate.",
-        "url" : "/lorem-ipsum-generator",
+        "url": "/lorem-ipsum-generator",
         "button": "Generate Lorem"
     },
     {
         "title": "Text Converter",
         "desc": "Convert your text into lower case, capital case and into many other cases.",
-        "url" : "/text-converter",
+        "url": "/text-converter",
         "button": "Convert text"
     },
     {
         "title": "My Screen Info",
-        "desc": "Understand your devices screen better, get screen size, Pixel Density, Aspect Ratio, Orientation and many other." ,
-        "url" : "/my-screen-info",
+        "desc": "Understand your devices screen better, get screen size, Pixel Density, Aspect Ratio, Orientation and many other.",
+        "url": "/my-screen-info",
         "button": "Get info"
     },
     {
         "title": "IPv4 addresses generator",
         "desc": "Generate random IPv4 addresses and Bulk download them.",
-        "url" : "/ip/random-ipv4",
+        "url": "/ip/random-ipv4",
         "button": "Generate"
     },
     {
         "title": "IPv6 addresses generator",
         "desc": "Generate random IPv6 addresses and Bulk download them.",
-        "url" : "/ip/random-ipv6",
+        "url": "/ip/random-ipv6",
+        "button": "Generate"
+    },
+    {
+        "title": "Multicast IPv4 addresses generator",
+        "desc": "Generate random Multicast IPv4 addresses and Bulk download them.",
+        "url": "/ip/multicast-ipv4",
+        "button": "Generate"
+    },
+    {
+        "title": "Multicast IPv6 addresses generator",
+        "desc": "Generate random Multicast IPv6 addresses and Bulk download them.",
+        "url": "/ip/multicast-ipv6",
         "button": "Generate"
     }
 ]
