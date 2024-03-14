@@ -78,3 +78,6 @@
 
 ## 13. JSON and XML editor
     [ ] Add a button which loads a content from url
+
+## 14. Lorem ipsum generator
+    [ ] Line break is not being applied on firefox browser
