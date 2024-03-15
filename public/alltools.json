@@ -280,5 +280,35 @@
         "desc": "Generate random Anycast IPv6 addresses and Bulk download them.",
         "url": "/ip/anycast-ipv6",
         "button": "Generate"
+    },
+    {
+        "title": "Automatic Private IPv4 addresses generator",
+        "desc": "Generate random Automatic Private IPv4 addresses and Bulk download them.",
+        "url": "/ip/automatic-private-ipv4",
+        "button": "Generate"
+    },
+    {
+        "title": "6to4 IPv6 addresses generator",
+        "desc": "Generate random 6to4 IPv6 addresses and Bulk download them.",
+        "url": "/ip/6to4-ipv6",
+        "button": "Generate"
+    },
+    {
+        "title": "Teredo IPv6 addresses generator",
+        "desc": "Generate random Teredo IPv6 addresses and Bulk download them.",
+        "url": "/ip/teredo-ipv6",
+        "button": "Generate"
+    },
+    {
+        "title": "ISATAP IPv6 addresses generator",
+        "desc": "Generate random ISATAP IPv6 addresses and Bulk download them.",
+        "url": "/ip/isatap-ipv6",
+        "button": "Generate"
+    },
+    {
+        "title": "CGNAT IPv6 addresses generator",
+        "desc": "Generate random CGNAT IPv6 addresses and Bulk download them.",
+        "url": "/ip/cgnat-ipv6",
+        "button": "Generate"
     }
 ]
