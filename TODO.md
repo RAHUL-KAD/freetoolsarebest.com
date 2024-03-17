@@ -7,6 +7,7 @@
     [ ] Add proper footer
     [ ] Add dark mode
     [ ] On home page, each tools desc is not being displaed proprely, based on the size it shows ...
+    [ ] Add proper file upload, so adding limit like only .svg is not helpful, so add a proper warning, i.e. only accepts .svg files, your file is of this type and then redirect to that page on click.
 
 ## 1. Email Validator
     [ ] Add batch email upload feature

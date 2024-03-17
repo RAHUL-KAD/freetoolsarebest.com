@@ -358,5 +358,53 @@
         "desc": "Convert BMP to base64",
         "url": "/bmp-base64",
         "button": "convert"
+    },
+    {
+        "title": "Base64 to SVG",
+        "desc": "Convert base64 to svg",
+        "url": "/base64-svg",
+        "button": "convert"
+    },
+    {
+        "title": "Base64 to PNG",
+        "desc": "Convert base64 to png",
+        "url": "/base64-png",
+        "button": "convert"
+    },
+    {
+        "title": "Base64 to JPEG",
+        "desc": "Convert base64 to jpeg",
+        "url": "/base64-jpeg",
+        "button": "convert"
+    },
+    {
+        "title": "Base64 to ICO",
+        "desc": "Convert base64 to ico",
+        "url": "/base64-ico",
+        "button": "convert"
+    },
+    {
+        "title": "Base64 to GIF",
+        "desc": "Convert base64 to gif",
+        "url": "/base64-gif",
+        "button": "convert"
+    },
+    {
+        "title": "Base64 to TIFF",
+        "desc": "Convert base64 to tiff",
+        "url": "/base64-tiff",
+        "button": "convert"
+    },
+    {
+        "title": "Base64 to WEBP",
+        "desc": "Convert base64 to webp",
+        "url": "/base64-webp",
+        "button": "convert"
+    },
+    {
+        "title": "Base64 to BMP",
+        "desc": "Convert base64 to bmp",
+        "url": "/base64-bmp",
+        "button": "convert"
     }
 ]
