@@ -81,8 +81,8 @@ const SVGEditor: React.FC = () => {
                 />
             </svg>
 
-            <div className="flex h-[33rem] lg:w-[65rem] w-[20rem] md:w-[40rem] md:mt-5 lg:mt-5 lg:h-[40rem]">
-                <div className="flex flex-col w-1/2 h-full border border-gray-300 p-3">
+            <div className="flex h-[33rem] lg:w-[65rem] w-[20rem] md:w-[40rem] md:mt-5 lg:mt-5 lg:h-[40rem] gap-2">
+                <div className="flex flex-col w-1/2 h-full border border-gray-300 rounded-md p-3">
                     <div className="flex justify-between mb-2">
                         <label htmlFor="file-upload" className="flex justify-center items-center bg-blue-500 hover:bg-blue-700 text-white font-bold text-sm py-1 px-2 rounded cursor-pointer text-center">
                             Upload SVG
@@ -97,13 +97,13 @@ const SVGEditor: React.FC = () => {
                         )}
                     </div>
                     <textarea
-                        className="flex-1 resize-none"
+                        className="flex-1 resize-none rounded-md"
                         placeholder="Enter SVG code here to view"
                         value={svgCode}
                         onChange={handleChange}
                     />
                 </div>
-                <div className="w-1/2 h-full border border-gray-300 p-4 relative">
+                <div className="w-1/2 h-full border border-gray-300 rounded-md p-4 relative">
                     {svgCode ? (
                         <div dangerouslySetInnerHTML={{ __html: svgCode }} />
                     ) : (

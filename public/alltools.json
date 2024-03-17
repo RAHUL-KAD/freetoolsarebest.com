@@ -310,5 +310,53 @@
         "desc": "Generate random CGNAT IPv6 addresses and Bulk download them.",
         "url": "/ip/cgnat-ipv6",
         "button": "Generate"
+    },
+    {
+        "title": "SVG to Base64",
+        "desc": "Convert SVG to base64",
+        "url": "/svg-base64",
+        "button": "convert"
+    },
+    {
+        "title": "PNG to Base64",
+        "desc": "Convert PNG to base64",
+        "url": "/png-base64",
+        "button": "convert"
+    },
+    {
+        "title": "JPEG to Base64",
+        "desc": "Convert JPEG to base64",
+        "url": "/jpeg-base64",
+        "button": "convert"
+    },
+    {
+        "title": "ICO to Base64",
+        "desc": "Convert ICO to base64",
+        "url": "/ico-base64",
+        "button": "convert"
+    },
+    {
+        "title": "GIF to Base64",
+        "desc": "Convert GIF to base64",
+        "url": "/gif-base64",
+        "button": "convert"
+    },
+    {
+        "title": "TIFF to Base64",
+        "desc": "Convert TIFF to base64",
+        "url": "/tiff-base64",
+        "button": "convert"
+    },
+    {
+        "title": "WEBP to Base64",
+        "desc": "Convert WEBP to base64",
+        "url": "/webp-base64",
+        "button": "convert"
+    },
+    {
+        "title": "BMP to Base64",
+        "desc": "Convert BMP to base64",
+        "url": "/bmp-base64",
+        "button": "convert"
     }
 ]

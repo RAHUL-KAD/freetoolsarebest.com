@@ -81,3 +81,7 @@
 
 ## 14. Lorem ipsum generator
     [ ] Line break is not being applied on firefox browser
+
+## 15. SVG to base64 converter
+    [ ] Add support for multiple file upload
+    [ ] Add support for multiple types of base64 converts - https://base64.guru/converter/encode/image/jpg
