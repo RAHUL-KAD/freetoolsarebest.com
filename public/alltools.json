@@ -406,5 +406,11 @@
         "desc": "Convert base64 to bmp",
         "url": "/base64-bmp",
         "button": "convert"
+    },
+    {
+        "title": "Passowrd Generator",
+        "desc": "Generate random passwords. Set password length, Add or remove numeric or special case values.",
+        "url": "/password-generator",
+        "button": "Generate"
     }
 ]

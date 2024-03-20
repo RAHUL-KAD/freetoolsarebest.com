@@ -15,3 +15,5 @@
 [ ] JSON tools
 [ ] CSV tools
 [ ] Random Data generator tools
+[ ] Base64 Encoders and Decoders
+[ ] Online Editor
