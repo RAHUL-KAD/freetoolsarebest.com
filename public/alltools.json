@@ -412,6 +412,11 @@
         "desc": "Convert base64 to bmp",
         "url": "/base64-bmp",
         "button": "convert"
+    },{
+        "title": "Base64 to PDF",
+        "desc": "Convert base64 to PDF",
+        "url": "/base64-pdf",
+        "button": "convert"
     },
     {
         "title": "Passowrd Generator",
