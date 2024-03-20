@@ -348,6 +348,12 @@
         "button": "convert"
     },
     {
+        "title": "PDF to Base64",
+        "desc": "Convert PDF to base64",
+        "url": "/pdf-base64",
+        "button": "convert"
+    },
+    {
         "title": "WEBP to Base64",
         "desc": "Convert WEBP to base64",
         "url": "/webp-base64",
