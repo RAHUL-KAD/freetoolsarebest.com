@@ -423,5 +423,35 @@
         "desc": "Generate random passwords. Set password length, Add or remove numeric or special case values.",
         "url": "/password-generator",
         "button": "Generate"
+    },
+    {
+        "title": "Audio metadata",
+        "desc": "Extract any type of audio file metadata.",
+        "url": "/audio-metadata",
+        "button": "Extract"
+    },
+    {
+        "title": "Image metadata",
+        "desc": "Extract any type of image file metadata.",
+        "url": "/image-metadata",
+        "button": "Extract"
+    },
+    {
+        "title": "What is my file size",
+        "desc": "Check the file size for any type of file.",
+        "url": "/what-is-my-file-size",
+        "button": "Extract"
+    },
+    {
+        "title": "Play audio file",
+        "desc": "Drag and Drop any audio file to play.",
+        "url": "/play-audio-file",
+        "button": "Play"
+    },
+    {
+        "title": "Play video file",
+        "desc": "Drag and Drop any video file to play.",
+        "url": "/play-video-file",
+        "button": "Play"
     }
 ]
