@@ -453,5 +453,11 @@
         "desc": "Drag and Drop any video file to play.",
         "url": "/play-video-file",
         "button": "Play"
+    },
+    {
+        "title": "Convert Numbers to Text",
+        "desc": "Convert numbers text for 50+ languages.",
+        "url": "/numbers-to-text",
+        "button": "Convert"
     }
 ]

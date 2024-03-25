@@ -17,3 +17,5 @@
 [ ] Random Data generator tools
 [ ] Base64 Encoders and Decoders
 [ ] Online Editor
+[ ] Metadata extraction
+[ ] convert numbers to text
